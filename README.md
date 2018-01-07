@@ -1,8 +1,13 @@
 OS： Macos Sierra
+
 IDE: Intellij Idea 2017
+
 DB: mysql (docker latest)
+
 App Server: apache-tomcat-8.5.20
+
 JDK: 1.8.0_121
+
 Build Tool: Maven 
 
 
