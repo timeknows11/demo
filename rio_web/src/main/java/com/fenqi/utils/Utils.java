@@ -30,7 +30,7 @@ public class Utils {
     }
 
     public static void main(String args[]) {
-        String result = executeLinuxCmd("ps -ef|grep RemoteMavenServer | grep -v grep | awk -F ' ' '{print $2}' | xargs jstack");
+        String result = executeLinuxCmd("ps -ef|grep tomcat | grep -v grep | awk -F ' ' '{print $2}' | xargs jstack");
         System.out.println(result);
     }
 }

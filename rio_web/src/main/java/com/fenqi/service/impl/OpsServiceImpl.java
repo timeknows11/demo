@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class OpsServiceImpl implements OpsService {
     public String getJstackInfo() {
-        String result = Utils.executeLinuxCmd("ps -ef|grep RemoteMavenServer | grep -v grep | awk -F ' ' '{print $2}' | xargs jstack");
+        String result = Utils.executeLinuxCmd("ps -ef|grep tomcat | grep -v grep | awk -F ' ' '{print $2}' | xargs jstack");
         return result;
     }
 }
